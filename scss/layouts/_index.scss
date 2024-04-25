@@ -18,9 +18,9 @@
     .hero-content img {
       width: 80%;
     }
-  }
+}
   
-  .hero-content {
+.hero-content {
     img {
       width: 60%;
       height: 550px;
@@ -71,17 +71,17 @@
         transition: 0.5s;
       }
     }
-  }
+}
 
-  .hero-article {
+.hero-article {
     display: flex;
     padding-top: 40px;
     background-color: #f8d1b7;
-  }
+}
   
-  .container-section {
+.container-section {
     padding-bottom: 150px;
-  }
+}
   
   @media (max-width: 1024px) {
     .container-section {
@@ -98,23 +98,23 @@
       flex-direction: column;
       font-size: 1rem;
     }
-  }
+}
   
-  .container-content a:hover {
+.container-content a:hover {
     background-color: red;
     border-radius: 30px;
     padding: 7px;
     transition: 0.5s;
-  }
+}
   
-  .hero-article img {
+.hero-article img {
     height: 600px;
     object-fit: cover;
     border-radius: 40px;
     padding: 20px;
-  }
+}
   
-  .container-content {
+.container-content {
     h2 {
       color: black;
       text-align: center;
@@ -147,7 +147,7 @@
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: bold;
     }
-  }
+}
 
   /* pilotos section */
 

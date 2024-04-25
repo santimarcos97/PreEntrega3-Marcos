@@ -9,28 +9,3 @@
 @import 'layouts/tienda';
 @import 'layouts/contacto';
 
-a {
-    text-decoration: none;
-}
-
-.bg-red {
-    background-color: #b40000;
-}
-
-.font-sans {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-}
-
-.font-fm {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    padding: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-}
