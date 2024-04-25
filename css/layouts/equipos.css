@@ -1,3 +1,189 @@
+/* car section */
+.cars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "car1 car1 car2 car2" "car3 car4 car4 car5" "car6 car6 car7 car7" "car8 car8 car9 car10";
+  padding: 10px;
+  gap: 10px;
+}
 
+@media (max-width: 768px) {
+  .cars {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "car1 car1" "car2 car2" "car3 car3" "car4 car4" "car5 car5" "car6 car6" "car7 car7" "car8 car8" "car9 car9" "car10 car10";
+  }
+}
+.car-item img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.car-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+}
+.car-content h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgba(253, 17, 5, 0.4745098039);
+  font-weight: bold;
+  border-radius: 15px;
+}
+.car-content a {
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #fd1005;
+}
+
+.car-item {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.c1 {
+  grid-area: car1;
+}
+
+.c2 {
+  grid-area: car2;
+}
+
+.c3 {
+  grid-area: car3;
+}
+
+.c4 {
+  grid-area: car4;
+}
+
+.c5 {
+  grid-area: car5;
+}
+
+.c6 {
+  grid-area: car6;
+}
+
+.c7 {
+  grid-area: car7;
+}
+
+.c8 {
+  grid-area: car8;
+}
+
+.c9 {
+  grid-area: car9;
+}
+
+.c10 {
+  grid-area: car10;
+}
+
+.notice-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "noticia1 noticia1 noticia1 noticia2" "noticia3 noticia4 noticia4 noticia4" "noticia5 noticia5 noticia6 noticia6";
+  padding: 10px;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .notice-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "noticia1 noticia1" "noticia2 noticia2" "noticia3 noticia3" "noticia4 noticia4" "noticia5 noticia5" "noticia6 noticia6";
+  }
+  .notice-content {
+    text-align: center;
+  }
+  .notice-content h2 {
+    font-size: 1.5rem;
+  }
+  .notice-content a {
+    font-size: 1.2rem;
+  }
+}
+.notice-box img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.notice-content {
+  background-color: rgba(0, 0, 0, 0.336);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+}
+.notice-content h2 {
+  font-size: 1, 2rem;
+}
+.notice-content a {
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.notice-content a:hover {
+  background-color: rgba(0, 0, 0, 0.445);
+  transition: 0.5s;
+}
+
+.notice-box {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.n1 {
+  grid-area: noticia1;
+}
+
+.n2 {
+  grid-area: noticia2;
+}
+
+.n3 {
+  grid-area: noticia3;
+}
+
+.n4 {
+  grid-area: noticia4;
+}
+
+.n5 {
+  grid-area: noticia5;
+}
+
+.n6 {
+  grid-area: noticia6;
+}
 
 /*# sourceMappingURL=equipos.css.map */
