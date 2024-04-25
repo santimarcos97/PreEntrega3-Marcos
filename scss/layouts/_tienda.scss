@@ -1,0 +1,174 @@
+/* carousel section */
+
+.carousel-item {
+    width: 100%;
+    height: 700px;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+.ferrari img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+/* tienda */
+
+/* cards tienda */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px;
+    gap: 20px;
+  }
+  
+  .prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 7px 7px 0px #fd110579;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  
+    a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      gap: 20px;
+      padding: 5px;
+      border-radius: 10px;
+      color: black;
+      background-color: #fd110579;
+    }
+  
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  
+    div {
+      padding: 20px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: center;
+    }
+  }
+
+/* equipos tienda */
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "team1 team2 team3" "team4 team5 team6" "team7 team8 team9";
+    padding: 10px;
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .team {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "team1 team1" "team2 team2" "team3 team3" "team4 team4" "team5 team5" "team6 team6" "team7 team7" "team8 team8" "team9 team9";
+    }
+  }
+  
+  .team-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 1px solid rgb(124, 1, 1);
+  }
+  
+  .team-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    gap: 10px;
+  
+    h2 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.5rem;
+      text-align: center;
+      background-color: #fd110579;
+      font-weight: bold;
+      border-radius: 15px;
+      border: 1px solid black;
+    }
+  
+    a {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+      color: white;
+      padding: 5px;
+      font-size: 1rem;
+      border-radius: 15px;
+      text-align: center;
+      background-color: #fd1005;
+      border: 1px solid black;
+    }
+  }
+  
+  .team-item {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .t1 {
+    grid-area: team1;
+  }
+  
+  .t2 {
+    grid-area: team2;
+  }
+  
+  .t3 {
+    grid-area: team3;
+  }
+  
+  .t4 {
+    grid-area: team4;
+  }
+  
+  .t5 {
+    grid-area: team5;
+  }
+  
+  .t6 {
+    grid-area: team6;
+  }
+  
+  .t7 {
+    grid-area: team7;
+  }
+  
+  .t8 {
+    grid-area: team8;
+  }
+  
+  .t9 {
+    grid-area: team9;
+  }
+  
+  
