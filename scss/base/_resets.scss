@@ -1,15 +1,20 @@
 @import '../base/vars';
 
+@font-face {
+  font-family: 'titillium';
+  src: url('../../assets/Titillium_Web/TitilliumWeb-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'titillium';
   }
 
   body {
     background-color: $quaternary-color;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'titillium';
 }
 
 a {
@@ -30,7 +35,7 @@ h1 {
   justify-content: center;
   font-size: 2.5rem;
   padding: 30px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'titillium';
   font-weight: bold;
   color: $quaternary-color;
 }

@@ -2,8 +2,12 @@
 
 @import 'base/resets';
 @import 'base/vars';
+
+/* components */
 @import 'components/navbar';
 @import 'components/footer';
+
+/* layouts */
 @import 'layouts/index';
 @import 'layouts/entradas';
 @import 'layouts/equipos';
