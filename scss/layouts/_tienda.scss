@@ -32,8 +32,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
-    box-shadow: 7px 7px 0px #fd110579;
+    background-color: $tertiary-color;
+    border: 1px solid $tertiary-color;
+    box-shadow: 7px 7px 0px $secondary-color;
     border-radius: 15px;
     overflow: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -46,8 +47,8 @@
       gap: 20px;
       padding: 5px;
       border-radius: 10px;
-      color: black;
-      background-color: #fd110579;
+      color: $tertiary-color;
+      background-color: $quaternary-color;
     }
   
     img {
@@ -63,6 +64,7 @@
       flex-direction: column;
       justify-content: flex-end;
       text-align: center;
+      color: $quaternary-color;
     }
 }
 
@@ -90,7 +92,7 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    border: 1px solid rgb(124, 1, 1);
+    border: 1px solid $tertiary-color;
   }
   
 .team-content {
@@ -108,22 +110,23 @@
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 1.5rem;
       text-align: center;
-      background-color: #fd110579;
+      background-color: $tertiary-color;
       font-weight: bold;
       border-radius: 15px;
-      border: 1px solid black;
+      border: 1px solid $quaternary-color;
+      color: $quaternary-color;
     }
   
     a {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: bold;
-      color: white;
+      color: $tertiary-color;
       padding: 5px;
       font-size: 1rem;
       border-radius: 15px;
       text-align: center;
-      background-color: #fd1005;
-      border: 1px solid black;
+      background-color: $quaternary-color;
+      border: 1px solid $tertiary-color;
     }
 }
   
