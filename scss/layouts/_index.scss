@@ -6,7 +6,7 @@
   flex-wrap: nowrap;
   padding: 10px;
   padding-top: 80px;
-  background-color: #f2a389;
+  background-color: $quaternary-color;
 }
 
 @media (max-width: 1024px) {
@@ -26,7 +26,7 @@
     height: 550px;
     object-fit: cover;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 2px solid $tertiary-color;
   }
 
   padding: 10px;
@@ -41,6 +41,7 @@
     text-align: center;
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $tertiary-color;
   }
 
   h2 {
@@ -49,6 +50,7 @@
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    color: $tertiary-color;
   }
 
   a {
@@ -56,19 +58,20 @@
     justify-content: center;
     text-decoration: none;
     padding: 10px;
-    border: 1px solid black;
-    color: white;
+    border: 1px solid $tertiary-color;
+    color: $quaternary-color;
     font-size: 20px;
     border-radius: 20px;
-    background-color: black;
+    background-color: $tertiary-color;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
 
     &:hover {
-      background-color: red;
+      background-color: $quaternary-color;
       border-radius: 30px;
       padding: 10px;
       transition: 0.5s;
+      color: $tertiary-color;
     }
   }
 }
@@ -77,18 +80,18 @@
 .hero-article {
     display: flex;
     padding-top: 40px;
-    background-color: #f8d1b7;
+    background-color: $light-color;
 }
   
 .container-section {
     padding-bottom: 150px;
 }
   
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     .container-section {
       flex-direction: column;
       font-size: 1rem;
-    }
+ } 
   
     .hero-article {
       img {
@@ -115,12 +118,14 @@
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 2rem;
       font-weight: bold;
+      color: $quaternary-color;
     }
   
     p {
       text-align: center;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 1.2rem;
+      color: $quaternary-color;
     }
   
     padding: 30px;
@@ -133,17 +138,18 @@
     a {
       text-decoration: none;
       padding: 7px;
-      border: 1px solid black;
-      color: white;
+      border: 1px solid $quaternary-color;
+      color:$tertiary-color;
       font-size: 20px;
-      background-color: black;
+      background-color: $quaternary-color;
       border-radius: 15px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: bold;
 
       &:hover {
-        background-color: red;
-        border-radius: 30px;
+        background-color: $tertiary-color;
+        color: $quaternary-color;
+        border-radius: 20px;
         padding: 7px;
         transition: 0.5s;
       }
@@ -234,21 +240,22 @@
 
   h2 {
     font-size: 1.8rem;
-    background-color: rgba(255, 0, 0, 0.582);
-    border: 1px solid white;
+    background-color: $quaternary-color;
+    color: $light-color;
   }
 
   a {
     color: white;
     padding: 5px;
     font-size: 1.5rem;
-    border: 1px solid white;
+    border: 1px solid $main-color;
     border-radius: 10px;
-    background-color: rgba(255, 0, 0, 0.432);
+    background-color: $quaternary-color;
 
     &:hover {
-      background-color: black;
+      background-color: $tertiary-color;
       transition: 0.5s;
+      color: $quaternary-color;
     }
   }
 }
