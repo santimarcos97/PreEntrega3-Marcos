@@ -128,33 +128,6 @@
   object-position: top;
 }
 
-.notice-content {
-  background-color: rgba(0, 0, 0, 0.336);
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  color: white;
-  gap: 10px;
-}
-.notice-content h2 {
-  font-size: 1, 2rem;
-}
-.notice-content a {
-  color: white;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-.notice-content a:hover {
-  background-color: rgba(0, 0, 0, 0.445);
-  transition: 0.5s;
-}
-
 .notice-box {
   display: flex;
   position: relative;
@@ -184,6 +157,33 @@
 
 .n6 {
   grid-area: noticia6;
+}
+
+.notice-content {
+  background-color: rgba(0, 0, 0, 0.336);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+}
+.notice-content h2 {
+  font-size: 1, 2rem;
+}
+.notice-content a {
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.notice-content a:hover {
+  background-color: rgba(0, 0, 0, 0.445);
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=equipos.css.map */

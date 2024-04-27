@@ -186,7 +186,39 @@
   object-fit: cover;
   object-position: center;
   border-radius: 15px;
+  }
+
+.pilotos-box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
 }
+  
+.p1 {
+    grid-area: piloto1;
+}
+  
+.p2 {
+    grid-area: piloto2;
+}
+  
+.p3 {
+    grid-area: piloto3;
+}
+  
+.p4 {
+    grid-area: piloto4;
+}
+  
+.p5 {
+    grid-area: piloto5;
+}
+  
+.p6 {
+    grid-area: piloto6;
+}
+
 
 .driver-content {
   position: absolute;
@@ -221,33 +253,3 @@
   }
 }
 
-.pilotos-box {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-
-.p1 {
-  grid-area: piloto1;
-}
-
-.p2 {
-  grid-area: piloto2;
-}
-
-.p3 {
-  grid-area: piloto3;
-}
-
-.p4 {
-  grid-area: piloto4;
-}
-
-.p5 {
-  grid-area: piloto5;
-}
-
-.p6 {
-  grid-area: piloto6;
-}
