@@ -1,4 +1,5 @@
 @import '../base/vars';
+@import '../base/utilities';
 
 @font-face {
   font-family: 'titillium';
@@ -33,10 +34,7 @@ a {
 h1 {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
   padding: 30px;
-  font-family: 'titillium';
-  font-weight: bold;
-  color: $quaternary-color;
+  @include tittle(bold, center, 2.5rem, $quaternary-color);
 }
 

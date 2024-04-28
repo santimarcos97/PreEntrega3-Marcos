@@ -18,8 +18,7 @@
   }
   
 .car-item img {
-    width: 100%;
-    object-fit: cover;
+    @include img(100%, 100%, cover);
     object-position: center;
     border-radius: 10px;
     box-shadow: 5px 5px 10px $dark-color;
@@ -37,18 +36,15 @@
     gap: 10px;
   
     h2 {
-      font-size: 1.5rem;
-      text-align: center;
+      @include tittle(bold, center, 1.5rem, $quaternary-color);
       background-color: $tertiary-color;
-      font-weight: bold;
       border-radius: 15px;
-      color: $quaternary-color;
     }
   
     a {
       color: $quaternary-color;
       padding: 5px;
-      font-size: 1rem;
+      font-size: 1.2rem;
       border-radius: 15px;
       border: 1px solid $secondary-color;
       text-align: center;
@@ -133,8 +129,7 @@
 }
 
 .notice-box img {
-  width: 100%;
-  object-fit: cover;
+  @include img(100%, 100%, cover);
   object-position: top;
 }
 

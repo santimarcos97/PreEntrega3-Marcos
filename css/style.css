@@ -31,10 +31,11 @@ a {
 h1 {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
   padding: 30px;
   font-family: "titillium";
   font-weight: bold;
+  text-align: center;
+  font-size: 2.5rem;
   color: #520000;
 }
 
@@ -62,6 +63,9 @@ h1 {
   .hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
     font-size: 1rem;
   }
@@ -73,9 +77,9 @@ h1 {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .hero-content img {
   width: 60%;
@@ -86,19 +90,19 @@ h1 {
   box-shadow: 10px 10px 10px #520000;
 }
 .hero-content p {
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 10px;
   font-family: "titillium";
+  font-size: 1.3rem;
+  text-align: center;
   color: #520000;
+  padding: 10px;
 }
 .hero-content h2 {
-  font-size: 2rem;
-  text-align: center;
-  padding: 10px;
   font-family: "titillium";
   font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
   color: #520000;
+  padding: 15px;
 }
 .hero-content a {
   display: flex;
@@ -133,7 +137,7 @@ h1 {
   padding-bottom: 150px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .container-section {
     flex-direction: column;
     font-size: 1rem;
@@ -145,9 +149,11 @@ h1 {
   .hero-article img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 }
 .hero-article img {
+  width: 100%;
   height: 600px;
   object-fit: cover;
   border-radius: 40px;
@@ -159,22 +165,21 @@ h1 {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
 .container-content h2 {
-  color: black;
-  text-align: center;
   font-family: "titillium";
-  font-size: 2rem;
   font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
   color: #FFDCDC;
 }
 .container-content p {
-  text-align: center;
   font-family: "titillium";
   font-size: 1.2rem;
+  text-align: center;
   color: #FFDCDC;
 }
 .container-content a {
@@ -228,6 +233,7 @@ h1 {
 }
 .pilotos-box img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 15px;
@@ -272,17 +278,21 @@ h1 {
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
+  gap: 10px;
   width: 100%;
   height: 100%;
   padding: 10px;
   color: white;
-  gap: 10px;
 }
 .driver-content h2 {
-  font-size: 1.8rem;
+  font-family: "titillium";
   font-weight: bold;
-  background-color: #FFDCDC;
+  text-align: center;
+  font-size: 1.8rem;
   color: #520000;
+  background-color: #FFDCDC;
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px #520000;
 }
 .driver-content a {
   color: #FFDCDC;
@@ -313,8 +323,11 @@ h1 {
 }
 .entradas a:hover {
   background-color: #FF1E1E;
-  border-radius: 30px;
+  border-radius: 10px;
   color: #FFDCDC;
+  transition: 0.4s;
+  box-shadow: 5px 5px 10px #FF1E1E;
+  border: 1px solid #000000;
 }
 
 @media (max-width: 768px) {
@@ -338,21 +351,22 @@ h1 {
   object-position: bottom;
   border-radius: 20px;
   border: 2px solid #FFDCDC;
-  box-shadow: 5px 5px 20px #000000;
+  box-shadow: 5px 5px 5px #000000;
 }
 
 .entradas-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   justify-content: center;
+  align-items: center;
+  gap: 7px;
 }
 .entradas-content h3 {
-  color: #FFDCDC;
-  text-align: center;
-  font-size: 2rem;
   font-family: "titillium";
   font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  color: #FFDCDC;
 }
 .entradas-content a {
   text-decoration: none;
@@ -360,10 +374,10 @@ h1 {
   border: 1px solid #FFDCDC;
   color: #520000;
   font-family: "titillium";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   background-color: #FFDCDC;
-  border-radius: 20px;
+  border-radius: 15px;
   text-align: center;
 }
 .entradas-content:hover img:not(:hover) {
@@ -389,6 +403,7 @@ h1 {
 }
 .car-item img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
@@ -407,17 +422,18 @@ h1 {
   gap: 10px;
 }
 .car-content h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: #FFDCDC;
+  font-family: "titillium";
   font-weight: bold;
-  border-radius: 15px;
+  text-align: center;
+  font-size: 1.5rem;
   color: #520000;
+  background-color: #FFDCDC;
+  border-radius: 15px;
 }
 .car-content a {
   color: #520000;
   padding: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: 15px;
   border: 1px solid #FF1E1E;
   text-align: center;
@@ -498,6 +514,7 @@ h1 {
 }
 .notice-box img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: top;
 }
@@ -590,7 +607,9 @@ h1 {
 .prod {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 0;
   background-color: #FFDCDC;
   border: 1px solid #520000;
   box-shadow: 10px 10px 20px #FFDCDC;
@@ -643,6 +662,7 @@ h1 {
 }
 .team-item img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
@@ -663,13 +683,13 @@ h1 {
 }
 .team-content h4 {
   font-family: "titillium";
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: #FFDCDC;
   font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #520000;
+  background-color: #FFDCDC;
   border-radius: 15px;
   border: 1px solid #520000;
-  color: #520000;
 }
 .team-content a {
   font-family: "titillium";

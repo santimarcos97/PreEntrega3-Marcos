@@ -1,0 +1,36 @@
+@mixin flex($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin flex-driver ($direction, $justify, $text-align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    text-align: $text-align;
+    gap: $gap;
+}
+
+@mixin tittle ($weight, $text-align, $font-size, $color) {
+    font-family: 'titillium';
+    font-weight: $weight;
+    text-align: $text-align;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin text($size, $align, $color){
+    font-family: 'titillium';
+    font-size: $size;
+    text-align: $align;
+    color:$color;
+}
+
+@mixin img($width, $height, $object){
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}
