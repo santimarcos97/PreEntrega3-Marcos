@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 41 |       background-color: $tertiary-color;
- *    |                         ^^^^^^^^^^^^^^^
+ * 25 |     box-shadow: 5px 5px 10px $dark-color;
+ *    |                              ^^^^^^^^^^^
  *    '
- *   scss\layouts\equipos.scss 41:25  root stylesheet */
+ *   scss\layouts\equipos.scss 25:30  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 41 \2502        background-color: $tertiary-color;\d\a    \2502                          ^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layouts\\equipos.scss 41:25  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 25 \2502      box-shadow: 5px 5px 10px $dark-color;\d\a    \2502                               ^^^^^^^^^^^\a    \2575 \a   scss\\layouts\\equipos.scss 25:30  root stylesheet";
 }

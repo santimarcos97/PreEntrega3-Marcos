@@ -33,8 +33,8 @@
     flex-direction: column;
     align-items: center;
     background-color: $tertiary-color;
-    border: 1px solid $tertiary-color;
-    box-shadow: 7px 7px 0px $secondary-color;
+    border: 1px solid $quaternary-color;
+    box-shadow: 10px 10px 20px $tertiary-color;
     border-radius: 15px;
     overflow: hidden;
     font-family: 'titillium';
@@ -93,6 +93,7 @@
     object-position: center;
     border-radius: 10px;
     border: 1px solid $tertiary-color;
+    box-shadow: 5px 5px 12px $dark-color;
   }
   
 .team-content {
