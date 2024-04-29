@@ -1,7 +1,7 @@
 /* base */
 @font-face {
   font-family: "titillium";
-  src: url("../../assets/Titillium_Web/TitilliumWeb-Regular.ttf");
+  src: url("../assets/Titillium_Web/TitilliumWeb-Regular.ttf");
 }
 * {
   margin: 0;
