@@ -6,8 +6,9 @@
   flex-wrap: nowrap;
   padding: 10px;
   padding-top: 80px;
-  background-color: $tertiary-color;
-}
+  background-image: linear-gradient(to bottom, $quaternary-color, $tertiary-color)
+  }
+
 
 @media (max-width: 1024px) {
   .hero {
@@ -33,12 +34,12 @@
   @include flex(column, center, center, 20px);
 
   p {
-    @include text(1.3rem, center, $quaternary-color);
+    @include text(1.3rem, center, $dark-color);
     padding: 10px;
   }
 
   h2 {
-    @include tittle (bold, center, 2rem, $quaternary-color);
+    @include tittle (bold, center, 2rem, $dark-color);
     padding: 15px;
   }
 
@@ -140,6 +141,20 @@
 
   /* pilotos section */
 
+.tittle-pilotos {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'titillium';
+    font-size: 3rem;
+    background-color: $tertiary-color;
+    color: $quaternary-color;
+    margin-bottom: 0;
+}
+
 .pilotos-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -147,6 +162,7 @@
   grid-template-areas: "piloto1 piloto1 piloto2 piloto2" "piloto3 piloto3 piloto4 piloto4" "piloto5 piloto5 piloto6 piloto6";
   padding: 10px;
   gap: 10px;
+  background-image: linear-gradient(to bottom, $tertiary-color, $quaternary-color);
 }
 
 @media (max-width: 768px) {

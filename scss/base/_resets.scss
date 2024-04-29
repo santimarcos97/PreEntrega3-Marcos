@@ -38,3 +38,21 @@ h1 {
   @include tittle(bold, center, 2.5rem, $quaternary-color);
 }
 
+.ticket {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  font-weight: bold;
+  font-family: 'titillium';
+  font-size: 3rem;
+  color: $light-color;
+}
+
+@media (max-width: 768px) {
+  .entradas {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}

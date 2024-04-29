@@ -39,6 +39,24 @@ h1 {
   color: #520000;
 }
 
+.ticket {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  font-weight: bold;
+  font-family: "titillium";
+  font-size: 3rem;
+  color: #FFEFEF;
+}
+
+@media (max-width: 768px) {
+  .entradas {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
 /* components */
 .bg-red {
   background-color: #FF1E1E;
@@ -56,7 +74,7 @@ h1 {
   flex-wrap: nowrap;
   padding: 10px;
   padding-top: 80px;
-  background-color: #FFDCDC;
+  background-image: linear-gradient(to bottom, #520000, #FFDCDC);
 }
 
 @media (max-width: 1024px) {
@@ -93,7 +111,7 @@ h1 {
   font-family: "titillium";
   font-size: 1.3rem;
   text-align: center;
-  color: #520000;
+  color: #000000;
   padding: 10px;
 }
 .hero-content h2 {
@@ -101,7 +119,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   font-size: 2rem;
-  color: #520000;
+  color: #000000;
   padding: 15px;
 }
 .hero-content a {
@@ -206,6 +224,20 @@ h1 {
 }
 
 /* pilotos section */
+.tittle-pilotos {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: bold;
+  font-family: "titillium";
+  font-size: 3rem;
+  background-color: #FFDCDC;
+  color: #520000;
+  margin-bottom: 0;
+}
+
 .pilotos-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -213,6 +245,7 @@ h1 {
   grid-template-areas: "piloto1 piloto1 piloto2 piloto2" "piloto3 piloto3 piloto4 piloto4" "piloto5 piloto5 piloto6 piloto6";
   padding: 10px;
   gap: 10px;
+  background-image: linear-gradient(to bottom, #FFDCDC, #520000);
 }
 
 @media (max-width: 768px) {
@@ -312,76 +345,78 @@ h1 {
 /* entradas */
 .entradas {
   display: flex;
-  padding: 20px;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-around;
-  font-weight: bold;
-  font-family: "titillium";
-  font-size: 3rem;
-  color: #FFEFEF;
-}
-.entradas a:hover {
-  background-color: #FF1E1E;
-  border-radius: 10px;
-  color: #FFDCDC;
-  transition: 0.4s;
-  box-shadow: 5px 5px 10px #FF1E1E;
-  border: 1px solid #000000;
-}
-
-@media (max-width: 768px) {
-  .entradas {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-}
-.hero-entradas {
-  display: flex;
-  flex-grow: 1;
-  flex-basis: 450px;
-  flex-direction: column;
-  width: 600px;
-  position: relative;
-}
-.hero-entradas img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: bottom;
-  border-radius: 20px;
-  border: 2px solid #FFDCDC;
-  box-shadow: 5px 5px 5px #000000;
-}
-
-.entradas-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 7px;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
 }
-.entradas-content h3 {
-  font-family: "titillium";
-  font-weight: bold;
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background-color: #520000;
+}
+.card .entrada {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card .frente {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px black;
+}
+.card .frente img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .frente h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
-  font-size: 2rem;
-  color: #FFDCDC;
 }
-.entradas-content a {
-  text-decoration: none;
-  padding: 5px;
-  border: 1px solid #FFDCDC;
-  color: #520000;
-  font-family: "titillium";
-  font-size: 18px;
-  font-weight: bold;
+.card:hover .frente {
+  transform: perspective(600px) rotateY(180deg);
+}
+.card .atras {
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
   background-color: #FFDCDC;
-  border-radius: 15px;
-  text-align: center;
+  padding: 15px;
+  color: #520000;
+  box-shadow: 0 5px 10px black;
 }
-.entradas-content:hover img:not(:hover) {
-  filter: grayscale(100%);
+.card .atras h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.card .atras .btn {
+  height: 50px;
+}
+.card:hover .atras {
+  transform: perspective(600px) rotateY(360deg);
+}
+.card .atras .btn a {
+  color: #520000;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* car section */
@@ -649,8 +684,8 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "team1 team2 team3" "team4 team5 team6" "team7 team8 team9";
-  padding: 10px;
-  gap: 20px;
+  padding: 70px;
+  gap: 60px;
 }
 
 @media (max-width: 768px) {
@@ -666,7 +701,6 @@ h1 {
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
-  border: 1px solid #FFDCDC;
   box-shadow: 5px 5px 12px #000000;
 }
 
@@ -708,6 +742,9 @@ h1 {
   position: relative;
   width: 100%;
   height: 350px;
+}
+.team-item:hover {
+  transform: scale(1.2);
 }
 
 .t1 {
