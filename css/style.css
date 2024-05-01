@@ -846,11 +846,12 @@ nav img {
 }
 
 form {
-  padding: 50px 55px;
-  box-shadow: 0 0 20px black;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
   border-radius: 20px;
   text-align: center;
-  width: 700px;
+  width: 600px;
   background-color: #FFDCDC;
 }
 
@@ -874,6 +875,7 @@ label {
 }
 
 .form-title {
+  display: flex;
   padding: 17px 25px;
   margin-bottom: 20px;
   background-color: #FFEFEF;
@@ -888,7 +890,7 @@ input::placeholder, textarea::placeholder {
 .form-txt {
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   text-align: center;
 }
 .form-txt a {
@@ -903,6 +905,18 @@ input::placeholder, textarea::placeholder {
   border: 0;
   background-color: #3a0000;
   box-shadow: 5px 5px 10px black;
+}
+
+@media (max-width: 768px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    background-color: #FFDCDC;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
