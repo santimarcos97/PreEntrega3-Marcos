@@ -9,7 +9,6 @@
   background-image: linear-gradient(to bottom, $quaternary-color, $tertiary-color)
   }
 
-
 @media (max-width: 1024px) {
   .hero {
     @include flex(column, center, center, 20px);
@@ -18,13 +17,14 @@
   }
 
   .hero-content img {
-    width: 80%;
+    width: 70%;
   }
+
 }
 
 .hero-content {
   img {
-    @include img (60%, 550px, cover);
+    @include img (70%, 500px, cover);
     border-radius: 20px;
     border: 2px solid $secondary-color;
     box-shadow: 10px 10px 10px $quaternary-color;
@@ -69,46 +69,79 @@
   }
 }
 
-
 .hero-article {
     display: flex;
-    padding: 40px; 
+    padding: 40px;
+    width: 100%;
+    height: 100%;
 }
   
 .container-section {
     padding-bottom: 150px;
 }
-  
-@media (max-width: 1400px) {
+
+.hero-article img {
+  display: flex;
+  @include img (700px, 100%, cover);
+  border-radius: 40px;
+  border: 2px solid $tertiary-color;
+  box-shadow: 10px 10px 15px $dark-color;
+}
+
+@media (max-width: 1024px) {
     .container-section {
+      display: flex;
       flex-direction: column;
       font-size: 1rem;
- } 
-  
+ }
+
+    .hero-content {
+      h2 {
+        @include tittle(bold, center, 1.2rem, $dark-color);
+        padding: 15px;
+      }
+
+      p {
+        @include text(1rem, center, $dark-color);
+        padding: 10px;
+      }
+
+      a{
+        font-size: 1rem;
+      }
+    }
+
     .hero-article {
       img {
         @include img (100%, 100%, cover);
       }
-  
+
+    .container-content {
+      h2 {
+        @include tittle(bold, center, 1.3rem, $light-color);
+      }
+
+      p {
+        @include text (1rem, center, $light-color);
+      }
+
+      a {
+        font-size: 1rem;
+      }
+    }  
       flex-direction: column;
       font-size: 1rem;
     }
+
 }
-  
-.hero-article img {
-    @include img (100%, 600px, cover);
-    border-radius: 40px;
-    border: 2px solid $tertiary-color;
-    box-shadow: 10px 10px 15px $dark-color;
-}
-  
+
 .container-content {
     h2 {
-      @include tittle(bold, center, 2rem, $tertiary-color);
+      @include tittle(bold, center, 2rem, $light-color);
     }
   
     p {
-      @include text (1.2rem, center, $tertiary-color);
+      @include text (1.2rem, center, $light-color);
     }
   
     padding: 30px;
@@ -138,7 +171,6 @@
       }
     }
 }
-
   /* pilotos section */
 
 .tittle-pilotos {
@@ -163,26 +195,6 @@
   padding: 10px;
   gap: 10px;
   background-image: linear-gradient(to bottom, $tertiary-color, $quaternary-color);
-}
-
-@media (max-width: 768px) {
-  .pilotos-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "piloto1 piloto1" "piloto2 piloto2" "piloto3 piloto3" "piloto4 piloto4" "piloto5 piloto5" "piloto6 piloto6";
-  }
-
-  .driver-content {
-    text-align: center;
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    a {
-      font-size: 1.2rem;
-    }
-  }
 }
 
 .pilotos-box img {
@@ -224,7 +236,6 @@
     grid-area: piloto6;
 }
 
-
 .driver-content {
   position: absolute;
   @include flex-driver(column, flex-end, center, 10px);
@@ -233,7 +244,7 @@
   padding: 10px;
   color: white;
 
-  h2 {
+  h4 {
     @include tittle(bold, center, 1.8rem, $quaternary-color);
     background-color: $tertiary-color;
     border-radius: 10px;
@@ -257,3 +268,30 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .pilotos-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "piloto1 piloto1" "piloto2 piloto2" "piloto3 piloto3" "piloto4 piloto4" "piloto5 piloto5" "piloto6 piloto6";
+  }
+
+  .driver-content {
+    text-align: center;
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  .tittle-pilotos {
+    font-size: 1.8rem;
+  }
+
+  .ticket {
+    font-size: 2rem;
+  }
+}
