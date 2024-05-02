@@ -20,6 +20,20 @@ form {
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  input {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 h2 {
@@ -52,7 +66,7 @@ input::placeholder, textarea::placeholder {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: flex-end;
 
   a {
     color: $quaternary-color;
@@ -62,7 +76,9 @@ input::placeholder, textarea::placeholder {
 }
 
 .boton {
-  font-size: 1rem;
+  display: flex;
+  font-size: 1.3rem;
+  padding: 15px;
   color: $tertiary-color;
   border: 0;
   background-color: $quaternary-color;
